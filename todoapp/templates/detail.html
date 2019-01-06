@@ -1,0 +1,21 @@
+<head> <title>ClipBoard</title>
+    <link href="http://127.0.0.1:8000/static/css/todoapp.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">ClipBoard</h1>
+        <div class="new_paste"><a class="npaste", href="http://127.0.0.1:8000/">+ new paste</a></div>
+    </header>
+
+<div class="main">
+    <h1 class="h1title">{{ptd.title}}</h1>
+    <b><time>{{ptd.date}}</time></b>
+    <div class="hlinks">
+        <b>Paste URL:</b> <a href="http://127.0.0.1:8000/p/{{ptd.link_code}}">http://127.0.0.1:8000/p/{{ptd.link_code}}</a>
+    </div> 
+    <p>{{ptd.text}}</p>                                 
+    
+</div>
+    
+</body>

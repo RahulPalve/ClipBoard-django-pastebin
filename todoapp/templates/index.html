@@ -1,0 +1,22 @@
+<head> <title>ClipBoard</title>
+<link href="http://127.0.0.1:8000/static/css/todoapp.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="logo">ClipBoard</h1>
+        <div class="new_paste"><a class="npaste", href="http://127.0.0.1:8000/">+ new paste</a></div>
+    </header>
+    
+    <article>
+        <div class="main">
+            <form method="POST">{% csrf_token %} {{form.as_p}}<button type="submit">Submit</button></form>
+        </div>
+    </article>
+
+    <aside>
+        <div class="asideleft">LEFT SIDE</div>
+    </aside>
+
+</body>
