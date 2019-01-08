@@ -1,27 +1,70 @@
 body{
     margin: 0%;
     font-family: "segoe ui","trebuchet MS","Lucida Sans Unicode","Lucida Sans",Sans-Serif;
-}
-a{
-    text-decoration: none;
-}
-a.npaste{
-    color: #fff;
-}
-
+    }
 header{
     background: #013d61;
     color: #fff;
     padding: 0.5em 1em 0.5em 1em;
-}
+    }
+    .new_paste{
+    background: #61ba65;
+    width: 6em;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.5em;
+    }
+article{
+    min-width: 4em;
+    width: 80%;
+    }
+.main{
+    margin: 1em;
+    float: left;
+    width: 70%;
+    }
+.asideleft{
+    margin: 1em;
+    box-align: left;
+    float: left;
+    width: 30%;
+    }
+#id_text{
+    height: 228px;
+    resize: horizontal;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    font-size: 13px;
+    min-height: 200px;
+    line-height: 21px;
+    width: 90%;
+    margin: 0.5em;
+    padding: 8px 12px;
+    }
+
+
 h1{
     margin: 0.5%;
     
 }
-h1.h1title{
-    font-weight: 550;
-    font-size: 20px;
-}
+    h1.h1title{
+        font-weight: 550;
+        font-size: 20px;
+    }
+a{
+    text-decoration: none;
+    }
+    a.npaste{
+        color: #fff;
+    }
+    a.ali{
+        color: #C03;
+    }
 button{
     background-color: #ddd;
     border-bottom: 2px solid #ccc;
@@ -50,49 +93,9 @@ label{
     font-weight: 550;
     margin: 1em;
 }
-
-.new_paste{
-    background: #61ba65;
-    width: 6em;
-    padding: 0.5em 1em 0.5em 1em;
-    border-radius: 0.5em;
-    
-    
-
-}
-article{
-
-    min-width: 4em;
-    width: 80%;
-}
-.asideleft{
-
-    box-align: left;
-    float: left;
-    width: 30px;
-
-}
-#id_text{
-    height: 228px;
-    resize: horizontal;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    box-sizing: border-box;
-    display: block;
-    overflow: hidden;
-    overflow-wrap: break-word;
-    font-size: 13px;
-    min-height: 200px;
-    line-height: 21px;
-    width: 90%;
+li{
     margin: 0.5em;
-    padding: 8px 12px;
+}
 
-}
-.main{
-    margin: 1em;
-    float: left;
-    width: 80%;
-}
+
+

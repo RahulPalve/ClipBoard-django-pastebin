@@ -16,7 +16,13 @@
     </article>
 
     <aside>
-        <div class="asideleft">LEFT SIDE</div>
+        <div class="asideleft"><label>Recent Paste's:</label>
+        <ul>
+            {% for todo in todos %}
+            <li><a class="ali", href="http://127.0.0.1:8000/p/{{todo.link_code}}">{{todo.title}}</a></li>
+        {% endfor %}
+        </ul>
+        </div>
     </aside>
 
 </body>

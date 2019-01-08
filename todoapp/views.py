@@ -4,7 +4,8 @@ from .forms import todoForm
 
 
 def index(request):
-    todos=Todo.objects.all()
+    todos=Todo.objects.order_by('-date')[:8]
+
     form=todoForm()
     if request.method=="POST":
         form=todoForm(request.POST)
