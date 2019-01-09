@@ -9,13 +9,21 @@
     </header>
 
 <div class="main">
-    <h1 class="h1title">{{ptd.title}}</h1>
-    <b><time>{{ptd.date}}</time></b>
+    <h1 class="h1title">{{todo.title}}</h1>
+    <b><time>{{todo.date}}</time></b>
     <div class="hlinks">
-        <b>Paste URL:</b> <a href="http://127.0.0.1:8000/p/{{ptd.link_code}}">http://127.0.0.1:8000/p/{{ptd.link_code}}</a>
+        <b>Paste URL:</b> <a href="http://127.0.0.1:8000/p/{{todo.link_code}}">http://127.0.0.1:8000/p/{{todo.link_code}}</a>
     </div> 
-    <p>{{ptd.text}}</p>                                 
+    <p>{{todo.text}}</p>                                 
     
 </div>
-    
+<aside>
+    <div class="asideleft"><label>Recent Paste's:</label>
+    <ul>
+        {% for td in todos %}
+        <li><a class="ali", href="http://127.0.0.1:8000/p/{{td.link_code}}">{{td.title}}</a></li>
+    {% endfor %}
+    </ul>
+    </div>
+</aside>
 </body>
