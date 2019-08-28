@@ -9,7 +9,7 @@ def show_todo(request,link_c):
     return render(request, "detail.html", {'todo': todo,'todos':todos})
 
 def index(request):
-
+    todos=Todo.objects.all()
     form=todoForm()
     if request.method=="POST":
         form=todoForm(request.POST)
