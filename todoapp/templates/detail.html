@@ -1,5 +1,6 @@
 <head> <title>ClipBoard</title>
     <link href="http://127.0.0.1:8000/static/css/todoapp.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/static/css/prism.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -14,7 +15,7 @@
     <div class="hlinks">
         <b>Paste URL:</b> <a href="http://127.0.0.1:8000/p/{{todo.link_code}}">http://127.0.0.1:8000/p/{{todo.link_code}}</a>
     </div> 
-    <p>{{todo.text}}</p>                                 
+    <pre><code class="language-{{todo.lang}}" >{{todo.text}}</code></pre>                                 
     
 </div>
 <aside>
@@ -26,4 +27,5 @@
     </ul>
     </div>
 </aside>
+<script src="http://127.0.0.1:8000/static/js/prism.js"></script>
 </body>
