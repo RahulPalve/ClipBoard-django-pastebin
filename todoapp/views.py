@@ -15,10 +15,7 @@ def index(request):
         form=todoForm(request.POST)
         form.save()
         form=todoForm()
-        
-    
     return render(request, "index.html", {'form':form, 'todos':todos})
 
 
-    
     
