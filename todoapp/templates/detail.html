@@ -3,6 +3,9 @@
 <head> <title>ClipBoard</title>
     <link href="{% static "/css/todoapp.css" %}" rel="stylesheet">
     <link href="{% static "/css/prism.css" %}" rel="stylesheet" />
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
 </head>
 
 <body>
@@ -17,7 +20,7 @@
     <div class="hlinks">
         <b>Paste URL:</b> <a href="http://127.0.0.1:8000/p/{{todo.link_code}}">http://127.0.0.1:8000/p/{{todo.link_code}}</a>
     </div> 
-    <pre><code class="language-{{todo.lang}}" >{{todo.text}}</code></pre>                                 
+    <pre class="code"><code class="language-{{todo.lang}}" >{{todo.text}}</code></pre>                             
     
 </div>
 <aside>

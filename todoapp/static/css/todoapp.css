@@ -20,7 +20,11 @@ article{
 .main{
     margin: 1em;
     float: left;
-    width: 70%;
+    width: 50%;
+    }
+.code{
+    height: 50%;
+    margin: 2px;
     }
 .asideleft{
     margin: 1em;
@@ -97,5 +101,9 @@ li{
     margin: 0.5em;  
 }
 
-
+@media screen and (max-width: 800px) {
+    .main, .asideleft {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
 
