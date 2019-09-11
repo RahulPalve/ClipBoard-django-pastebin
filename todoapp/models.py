@@ -8,7 +8,7 @@ class Todo(models.Model):
     title=models.CharField(max_length=40, default="Unknown")
     text=models.TextField()
     link_code=models.CharField(max_length=8,unique=True, validators=[alphanumeric])
-    langs=[('c','C'),('cpp','CPP'),('py','Python')]
+    langs=[('c','C'),('cpp','C++'),('csharp','C#'),('java','Java'),('js','JavaScript'),('php','PHP'),('py','Python'),('sql','SQL')]
     lang=models.CharField(max_length=10, choices=langs, default='c')
     date=models.DateTimeField(auto_now_add=True)
 

@@ -1,12 +1,14 @@
+{% load static %}
+
 <head> <title>ClipBoard</title>
-    <link href="http://127.0.0.1:8000/static/css/todoapp.css" rel="stylesheet">
-    <link href="http://127.0.0.1:8000/static/css/prism.css" rel="stylesheet" />
+    <link href="{% static "/css/todoapp.css" %}" rel="stylesheet">
+    <link href="{% static "/css/prism.css" %}" rel="stylesheet" />
 </head>
 
 <body>
     <header>
         <h1 class="logo">ClipBoard</h1>
-        <div class="new_paste"><a class="npaste", href="http://127.0.0.1:8000/">+ new paste</a></div>
+        <div class="new_paste"><a class="npaste", href="http://127.0.0.1:8000">+ new paste</a></div>
     </header>
 
 <div class="main">
