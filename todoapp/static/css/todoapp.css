@@ -23,14 +23,14 @@ article{
     width: 50%;
     }
 .code{
-    height: 50%;
+    height: 60%;
     margin: 2px;
     }
 .asideleft{
     margin: 1em;
     box-align: left;
     float: left;
-    width: 30%;
+    width: 40%;
     }
 #id_text{
     height: 228px;
@@ -46,7 +46,7 @@ article{
     font-size: 13px;
     min-height: 200px;
     line-height: 21px;
-    width: 90%;
+    width: 100%;
     margin: 0.5em;
     padding: 8px 12px;
     }
@@ -96,7 +96,17 @@ button{
 label{
     font-weight: 550;
     margin: 1em;
+    
 }
+select, input{
+    width: 40%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    text-align: left;
+    float: right;
+}
+
 li{
     margin: 0.5em;  
 }
