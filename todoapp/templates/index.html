@@ -1,5 +1,6 @@
+{% load static %}
 <head> <title>ClipBoard</title>
-<link href="http://127.0.0.1:8000/static/css/todoapp.css" rel="stylesheet">
+    <link href="{% static "/css/todoapp.css" %}" rel="stylesheet">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -8,7 +9,7 @@
 
     <header>
         <h1 class="logo">ClipBoard</h1>
-        <div class="new_paste"><a class="npaste", href="http://127.0.0.1:8000/">+ new paste</a></div>
+        <div class="new_paste"><a class="npaste", href="{% url 'index' %}">+ new paste</a></div>
     </header>
     
     <article>
@@ -21,7 +22,7 @@
         <div class="asideleft"><label>Recent Paste's:</label>
         <ul>
             {% for td in todos %}
-            <li><a class="ali", href="http://127.0.0.1:8000/p/{{td.link_code}}">{{td.title}}</a></li>
+            <li><a class="ali", href="{% url 'index'%}p/{{td.link_code}}">{{td.title}}</a></li>
         {% endfor %}
         </ul>
         </div>
