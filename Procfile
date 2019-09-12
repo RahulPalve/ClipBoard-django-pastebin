@@ -1,1 +1,1 @@
-web: gunicorn clipboard.wsgi
+web: gunicorn todo.wsgi
