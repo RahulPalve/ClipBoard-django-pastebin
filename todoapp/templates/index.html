@@ -24,6 +24,7 @@
             {% for td in todos %}
             <li><a class="ali", href="{% url 'index'%}p/{{td.link_code}}">{{td.title}}</a></li>
         {% endfor %}
+        <button><a href="{% url 'all' %}">See all</a></button>
         </ul>
         </div>
     </aside>
