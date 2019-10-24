@@ -19,3 +19,4 @@ Similar and alternative to Pastebin, tinypaste, hastebin etc.
 
 
 ![alt text](https://github.com/RahulPalve/ClipBoard-django-pastebin/blob/master/todoapp/static/images/detailed.png)
+
