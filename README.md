@@ -7,7 +7,7 @@ A Django 2.0 powered web application which is text storage web app follows paste
 Similar and alternative to Pastebin, tinypaste, hastebin etc.
 
 # Getting Started
-To setup this project, create a virtual environment using Python 3.6 or higher and run the following command in your terminal (ensure that you are in the project directory):
+To setup this project, create a virtual environment using Python 3.6 or higher. And make sure you install django 2.0.9([link to Django Installation Guide !](https://docs.djangoproject.com/en/2.2/topics/install/) ). Then run the following command in your terminal (ensure that you are in the project directory):
 
 ~~~ 
 $ pip install -r requirements.txt 
