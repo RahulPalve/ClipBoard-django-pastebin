@@ -1,6 +1,7 @@
 body{
     margin: 0%;
     font-family: "segoe ui","trebuchet MS","Lucida Sans Unicode","Lucida Sans",Sans-Serif;
+    border-bottom: 10px solid #013d61;
     }
 header{
     background: #013d61;

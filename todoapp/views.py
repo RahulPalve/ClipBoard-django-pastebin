@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponseRedirect, HttpResponse
 from .models import Todo
 from .forms import todoForm
 
@@ -15,12 +15,15 @@ def all(request):
 
 def index(request):
     todos=Todo.objects.order_by('-date')[:8]
-    todos=Todo.objects.all()[:8]
     form=todoForm()
     if request.method=="POST":
-        form=todoForm(request.POST)
-        form.save()
-        form=todoForm()
+        try:
+            form=todoForm(request.POST)
+            form.save()
+            return HttpResponseRedirect("/") 
+        except ValueError:
+            pass
+
     return render(request, "index.html", {'form':form, 'todos':todos})
 
 
