@@ -1,3 +1,5 @@
+# Checkout Live running version!
+[https://djangoclipboard.herokuapp.com/](https://djangoclipboard.herokuapp.com/)
 # ClipBoard-django-pastebin
 
 This is ClipBoard.
